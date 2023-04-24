@@ -23,7 +23,12 @@ To use the bot, follow these steps:
 2. The bot should now be running and listening for messages in the Discord channel specified in the code (currently set to `1098980943533969508`). You can change this channel ID in the code to the ID of the channel you want the bot to listen in.
 3. To send a message to the bot, type "hey bard" followed by your message in the Discord channel.
 4. The bot should reply with a generated response from the OpenAI API in an embed. You can change the color of the embed by modifying the `color` parameter in the code.
-5. The bot should also add a thumbs up emoji reaction to your message and a check mark emoji reaction to its own message.
+5. The bot will add a ✅ when a messsage has been seen and has started to generate a response.
+6. The bot will respond and then react to the question with a 👍 once the messsage has been responded too.
+
+## NOTES
+
+The whole bot works asynchronously, if multiple users are talking to the bot it will respond in the order it has been seen. And react accordingly. 
 
 ## Credits
 
